@@ -11,6 +11,7 @@ async function getLiveQuote() {
 
         // Fetch a completely random quote from the public API
         const response = await fetch('https://dummyjson.com');
+
         
         if (!response.ok) {
             throw new Error('Network response failure');
