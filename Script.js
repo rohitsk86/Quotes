@@ -10,7 +10,7 @@ async function getLiveQuote() {
         quoteButton.disabled = true;
 
         // Fetch a completely random quote from the public API
-        const response = await fetch('https://dummyjson.com');
+        const response = await fetch('https://dummyjson.com/quotes/random');
 
         
         if (!response.ok) {
