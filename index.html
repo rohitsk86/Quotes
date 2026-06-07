@@ -18,6 +18,9 @@
     </header>
 
     <main>
+<h2 id="live-date"></h2>
+<h1 id="live-time"></h1>
+
         <section>
 <h1>नमस्कार श्री. गिरीश भाऊ.</h1>
             <p>Sarkar Namskar.</p>
@@ -37,5 +40,23 @@
     </footer>
 
     <script src="script.js"></script>
+<script>
+        function updateClock() {
+            const now = new Date();
+            
+            // Format options for a cleaner look
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            
+            // Update the HTML text content
+            document.getElementById('live-date').textContent = now.toLocaleDateString('en-US', dateOptions);
+            document.getElementById('live-time').textContent = now.toLocaleTimeString();
+        }
+
+        // Run the function instantly on page load
+        updateClock(); 
+
+        // Refresh the time every 1000 milliseconds (1 second)
+        setInterval(updateClock, 1000);
+    </script>
 </body>
 </html>
