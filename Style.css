@@ -15,12 +15,15 @@ body {
 }
 
 /* 3. Typography */
-h1 {
 
-  font-size: 70px;
-  font-weight: 600;
-  color:red;
+
+  h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: red;
 }
+
+
 
 p {
     margin-bottom: 15px;
