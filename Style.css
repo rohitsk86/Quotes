@@ -15,12 +15,11 @@ body {
 }
 
 /* 3. Typography */
-header h1 {
+h1 {
+
   font-size: 70px;
   font-weight: 600;
-  
-  color: purple;
-  
+  color:red;
 }
 
 p {
